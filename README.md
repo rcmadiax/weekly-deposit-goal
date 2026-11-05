@@ -15,3 +15,11 @@ A static, offline-capable weekly deposit calculator. No backend or third-party s
 Entries auto-save to localStorage on the device. Use **Save weekly snapshot** for historical records, and **Export JSON backup** to save a portable backup in Files. Import replaces all locally saved data after confirmation. Data does **not** automatically sync between devices. Clearing site data, removing the PWA, or changing browsers can erase entries; keep exported backups.
 
 The Shippo amount is an extra deduction; don't enter amounts already included in pending-order shipping estimates.
+
+## Version 1.1 changes
+
+- Added Mercari to available balances and the weekly total.
+- Renamed pending PayPal orders to **Pending Shippo orders** (same $6.25/order shipping estimate).
+- Fixed iPhone date field sizing in Weekly history.
+- Existing saved data and JSON backups remain compatible; the previous `paypalOrders` value is migrated into `shippoOrders` when loaded.
+- Updated offline cache to refresh the app after publishing.
